@@ -26,9 +26,9 @@ def sort_dict(letters):
     char_counter = sorted(char_counter, key=get_num, reverse=True)
     return char_counter
 
-def output_formatted(word_count,letters):
+def output_formatted(word_count,letters, file_path):
     print("============ BOOKBOT ============")
-    print("Analyzing book found at books/frankenstein.txt...")
+    print(f"Analyzing book found at {file_path}")
     print("----------- Word Count ----------")
     print(f"Found {word_count} total words")
     print("--------- Character Count -------")
